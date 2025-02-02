@@ -28,4 +28,21 @@ for x in range (30) :
     t.dot ()
 
 # hold the turtle screen
+
+# triangle
+
+t.penup()
+t.goto (-200,-100)
+t.pendown()
+t.color ("#7a4f04","#b3873d")
+t.begin_fill()
+for i in range (3):
+    t.forward (200)
+    t.left (120)
+t.end_fill()
+t.penup()
+t.goto (-180,-70)
+t.pendown()
+t.forward (170)
+
 t.mainloop ()
