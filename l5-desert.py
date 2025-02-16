@@ -2,6 +2,9 @@ import turtle as t
 import random
 
 t.speed (0)
+# sky
+
+t.bgcolor ("#23B8FE")
 
 #sand-box
 t.penup ()
@@ -73,40 +76,27 @@ t.begin_fill ()
 t.circle (45,-180)
 t.end_fill ()
 
-# sky
 
-t.bgcolor ()
-t.penup ()
-t.forward (100)
-t.pendown ()
-t.color ("#23B8FE")
-t.begin_fill ()
+
 
 # cacti
 
+t.penup ()
+t.goto (115,-65)
+t.pendown ()
 t.color ("#1D3D1D", "#1FB01F")
 t.begin_fill ()
-t.penup ()
-t.goto (115,-55)
-t.pendown ()
-t.forward (30)
-t.penup ()
-t.forward (25)
-t.pendown ()
-t.seth(180)
-t.circle (13,180)
-t.penup()
-t.left(90)
-t.forward(25)
-t.pendown()
-t.forward(30)
-t.seth(90)
+t.forward (55)
+t.seth (180)
 t.circle (-20,180)
-t.forward (25)
-t.seth(180)
-t.circle (15, -180)
-t.seth (270)
-t.forward (40)
+t.seth(90)
+t.forward (20)
+t.circle (-20,180)
+t.forward (30)
+t.seth(0)
+t.circle (-15,180)
+t.seth(270)
+t.forward (50)
 t.end_fill ()
 
 t.mainloop ()
